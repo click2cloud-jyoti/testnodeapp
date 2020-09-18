@@ -1,6 +1,6 @@
 Param(
 [string]$test_env1,
-[string]$test_env1
+[string]$test_env2
 )
 
 
