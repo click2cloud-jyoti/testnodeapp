@@ -4,6 +4,8 @@ Param(
 )
 [System.Environment]::SetEnvironmentVariable('siteName','tachytelic.net',[System.EnvironmentVariableTarget]::Machine)
 
+set
+
 Write-Host "Starting PS Task 1"
 
 Write-Host "Our public variable is: $($env:PublicVariable)";
