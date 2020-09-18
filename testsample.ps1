@@ -2,7 +2,7 @@ Param(
 [string]$test_env1,
 [string]$test_env2
 )
-
+[System.Environment]::SetEnvironmentVariable('siteName','tachytelic.net',[System.EnvironmentVariableTarget]::Machine)
 
 Write-Host "Starting PS Task 1"
 
