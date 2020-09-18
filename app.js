@@ -43,8 +43,9 @@ app.use(function(err, req, res, next) {
 });
 
 // module.exports = app;
-
-app.listen(3000, (err)=>{
+ console.log(`Express on running port ${process.env.TEST_ENV1}`);
+ console.log(`Express on running port ${process.env.TEST_ENV2}`);
+app.listen(process.env.NODE_PORT, (err)=>{
   if(err) throw err;
   console.log(`Express on running port ${process.env.NODE_PORT}`);
 })
