@@ -3,7 +3,7 @@ Param(
 [string]$test_env2
 )
 [System.Environment]::SetEnvironmentVariable('siteName','tachytelic.net',[System.EnvironmentVariableTarget]::Machine)
-
+New-Item -Path c:\test3 -ItemType directory
 set
 
 Write-Host "Starting PS Task 1"
